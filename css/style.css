@@ -2,7 +2,7 @@
     box-sizing: border-box;
 } */
 
-@keyframes Cue-In {
+/* @keyframes Cue-In {
     0% {
       opacity: 0;
       transform: scale(0.1) rotateX(45deg)
@@ -12,7 +12,50 @@
       transform: scale(1) rotateX(0)
     }
     
-  }
+  } */
+
+
+@keyframes flexim {
+    0% {
+        width: 200px;
+        transform: rotate(0deg);
+        top: 50%;
+        left: 50%;
+    }
+
+    50% {
+        transform: rotate(80deg);
+    }
+
+    100% {
+        top: 0%;
+        left: 0%;
+        width: 1000px;
+        transform: rotate(-80deg);
+    }
+}
+
+@keyframes flexim1 {
+    0% {
+        width: 200px;
+        transform: rotate(0deg);
+        top: 50%;
+        right: 50%;
+    }
+
+    50% {
+        transform: rotate(-80deg);
+    }
+
+    100% {
+        top: 0%;
+        right: 0%;
+        width: 1000px;
+        transform: rotate(80deg);
+    }
+}
+
+
 
 .body {
     background: fixed white url("../img/chepalg.jpg") no-repeat;
@@ -127,3 +170,31 @@
 .audiotemplate   {
     display: none;
 }
+
+.flex {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0px;
+    /* animation: flexim 5s ease 0s; */
+}
+
+.flexanimation {
+    animation: flexim 5s ease 0s;
+}
+
+.flex1 {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 0px;
+    /* animation: flexim1 5s ease 0s; */
+}
+
+.flexanimation1 {
+    animation: flexim1 5s ease 0s;
+}
+
+
+
+/* проверка */

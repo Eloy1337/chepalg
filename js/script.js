@@ -43,6 +43,10 @@ button.addEventListener("click", () => {
         audio.pause();
         button.textContent = "Просто дай мне чепалг";
     }
+
+    document.querySelector('.flex').classList.add("flexanimation");
+    document.querySelector('.flex1').classList.add("flexanimation1")
+
 })
 
 console.log("vse norm")
